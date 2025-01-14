@@ -1,14 +1,19 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
-    "declaration": true,
-    "outDir": "./dist",
-    "strict": true,
+    "target": "ES2020",
+    "module": "ES2020",
+    "moduleResolution": "node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "allowJs": true,
+    "checkJs": true,
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "types": ["node", "mocha", "chai"]
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src/**/*", "test/**/*"],
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifiers": true
+  }
 }
