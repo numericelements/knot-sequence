@@ -1,13 +1,16 @@
 {
   "name": "knot-sequence",
   "version": "0.0.1",
-  "description": "A library for generating and manipulating knot sequences tailored for b-spline curves and surfaces. Includes tools for knot sequence creation, refinement, and analysis.",
-  "main": "index.js",
+  "description": "A library for generating and manipulating knot sequences for b-spline curves and surfaces",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest",
+    "prepare": "npm run build"
   },
-  "keywords": [],
-  "author": "Jean-Claude Léon, Éric Demers and François Guibault",
+  "keywords": ["b-spline", "knot-sequence", "curves", "surfaces", "cad"],
+  "author": "",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^22.10.6",
