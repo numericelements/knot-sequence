@@ -1,0 +1,20 @@
+# Development files
+src/
+test/
+.github/
+.vscode/
+coverage/
+examples/
+
+# Config files
+tsconfig.json
+jest.config.js
+.eslintrc
+.prettierrc
+
+# Build artifacts
+dist/*.map
+
+# Misc
+.DS_Store
+*.log
