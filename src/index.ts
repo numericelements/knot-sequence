@@ -10,8 +10,6 @@ export { StrictlyIncreasingOpenKnotSequenceClosedCurve } from "./StrictlyIncreas
 export { StrictlyIncreasingOpenKnotSequenceOpenCurve } from "./StrictlyIncreasingOpenKnotSequenceOpenCurve";
 export { StrictlyIncreasingPeriodicKnotSequenceClosedCurve } from "./StrictlyIncreasingPeriodicKnotSequenceClosedCurve";
 
-
-
 // export interfaces
 export { IncreasingKnotSequenceInterface } from "./IncreasingKnotSequenceInterface";
 export { IncreasingOpenKnotSequenceInterface } from "./IncreasingOpenKnotSequenceInterface";
@@ -19,7 +17,6 @@ export { KnotIndexInterface } from "./KnotIndexConstructorInterface";
 export { KnotSequenceInterface } from "./KnotSequenceInterface";
 export { StrictlyIncreasingKnotSequenceInterface } from "./StrictlyIncreasingKnotSequenceInterface";
 export { StrictlyIncreasingOpenKnotSequenceInterface } from "./StrictlyIncreasingOpenKnotSequenceInterface";
-
 
 // export decorators
 export { adaptParameterDecrementKnotMultiplicity } from "./KnotSequenceAndUtilities/adaptParameterDecrementKnotMultiplicity";
@@ -34,3 +31,6 @@ export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceCC } from "./KnotSequ
 export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC } from "./KnotSequenceAndUtilities/fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC";
 export { fromInputParametersToIncreasingOpenKnotSequenceCC } from "./KnotSequenceAndUtilities/fromInputParametersToIncreasingOpenKnotSequenceCC";
 
+// export Error Messages
+export * from "./ErrorMessages/Knots";
+export * from "./ErrorMessages/KnotSequences";
