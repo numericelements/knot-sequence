@@ -34,3 +34,5 @@ export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceCC } from "./KnotSequ
 export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC } from "./KnotSequenceAndUtilities/fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC";
 export { fromInputParametersToIncreasingOpenKnotSequenceCC } from "./KnotSequenceAndUtilities/fromInputParametersToIncreasingOpenKnotSequenceCC";
 
+// export named constant of constructor types
+export { NO_KNOT_OPEN_CURVE } from "./KnotSequenceConstructorInterface";
