@@ -1,5 +1,3 @@
-export { AbstractKnotIndex } from "./AbstractKnotIndex";
-export { AbstractKnotSequence } from "./AbstractKnotSequence";
 export { IncreasingOpenKnotSequenceClosedCurve } from "./IncreasingOpenKnotSequenceClosedCurve";
 export { IncreasingOpenKnotSequenceOpenCurve } from "./IncreasingOpenKnotSequenceOpenCurve";
 export { IncreasingPeriodicKnotSequenceClosedCurve } from "./IncreasingPeriodicKnotSequenceClosedCurve";
@@ -29,7 +27,32 @@ export { fromIncreasingPeriodicToIncreasingOpenKnotSequenceCC } from "./KnotSequ
 export { fromIncreasingPeriodicToStrictlyIncreasingPeriodicKnotSequence } from "./KnotSequenceAndUtilities/fromIncreasingPeriodicToStrictlyIncreasingPeriodicKnotSequence";
 export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceCC } from "./KnotSequenceAndUtilities/fromIncreasingToStrictlyIncreasingOpenKnotSequenceCC";
 export { fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC } from "./KnotSequenceAndUtilities/fromIncreasingToStrictlyIncreasingOpenKnotSequenceOC";
-export { fromInputParametersToIncreasingOpenKnotSequenceCC } from "./KnotSequenceAndUtilities/fromInputParametersToIncreasingOpenKnotSequenceCC";
+export { fromStrictlyIncreasingPeriodicToIncreasingPeriodicKnotSequence } from "./KnotSequenceAndUtilities/fromStrictlyIncreasingPeriodicToIncreasingPeriodicKnotSequence";
+export { fromStrictlyIncreasingPeriodicToStrictlyIncreasingOpenKnotSequenceCC } from "./KnotSequenceAndUtilities/fromStrictlyIncreasingPeriodicToStrictlyIncreasingOpenKnotSequenceCC";
+export { fromStrictlyIncreasingToIncreasingKnotSequenceCC } from "./KnotSequenceAndUtilities/fromStrictlyIncreasingToIncreasingKnotSequenceCC";
+export { fromStrictlyIncreasingtToIncreasingKnotSequenceOC } from "./KnotSequenceAndUtilities/fromStrictlyIncreasingtToIncreasingKnotSequenceOC";
 
 // export named constant of constructor types
 export { NO_KNOT_OPEN_CURVE } from "./KnotSequenceConstructorInterface";
+export { NO_KNOT_CLOSED_CURVE } from "./KnotSequenceConstructorInterface";
+export { UNIFORM_OPENKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { UNIFORMLYSPREADINTERKNOTS_OPENKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { INCREASINGOPENKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { INCREASINGOPENKNOTSEQUENCE_UPTOC0DISCONTINUITY } from "./KnotSequenceConstructorInterface";
+export { INCREASINGOPENKNOTSEQUENCECLOSEDCURVE } from "./KnotSequenceConstructorInterface";
+export { INCREASINGOPENKNOTSEQUENCECLOSEDCURVEALLKNOTS } from "./KnotSequenceConstructorInterface";
+export { INCREASINGOPENKNOTSEQUENCE_UPTOC0DISCONTINUITY_CLOSEDCURVEALLKNOTS } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGOPENKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGOPENKNOTSEQUENCE_UPTOC0DISCONTINUITY } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGOPENKNOTSEQUENCECLOSEDCURVE } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGOPENKNOTSEQUENCECLOSEDCURVEALLKNOTS } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGOPENKNOTSEQUENCE_UPTOC0DISCONTINUITY_CLOSEDCURVEALLKNOTS } from "./KnotSequenceConstructorInterface";
+export { NO_KNOT_PERIODIC_CURVE } from "./KnotSequenceConstructorInterface";
+export { UNIFORM_PERIODICKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { INCREASINGPERIODICKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+export { STRICTLYINCREASINGPERIODICKNOTSEQUENCE } from "./KnotSequenceConstructorInterface";
+
+// named constants of knot sequence parameters
+export { KNOT_SEQUENCE_ORIGIN } from "./namedConstants/KnotSequences";
+export { KNOT_COINCIDENCE_TOLERANCE } from "./namedConstants/KnotSequences";
+export { NormalizedBasisAtSequenceExtremity } from "./namedConstants/KnotSequences";
