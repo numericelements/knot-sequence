@@ -11,7 +11,10 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true
+    "emitDecoratorMetadata": true,
+    "declarationMap": true,        // Generates sourcemaps for .d.ts files
+    "removeComments": false,       // Preserves comments in output
+    "stripInternal": true         // Removes @internal from documentation
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "test"]

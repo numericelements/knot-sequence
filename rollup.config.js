@@ -18,13 +18,14 @@ export default [
         declaration: true,
         declarationDir: 'dist',
         rootDir: 'src',
-        outDir: 'dist'  // Explicitly set outDir to match Rollup's dir
+        outDir: 'dist',  // Explicitly set outDir to match Rollup's dir
+        removeComments: false  // To explicitly preserve comments
       })
     ],
     external: ['tslib'],
     onwarn(warning, warn) {
       // Ignore circular dependency warnings
-      if (warning.code === 'CIRCULAR_DEPENDENCY') return;
+      // if (warning.code === 'CIRCULAR_DEPENDENCY') return;
       warn(warning);
     }
   },
@@ -42,14 +43,16 @@ export default [
       typescript({
         tsconfig: './tsconfig.json',
         declaration: false,
+        declarationMap: false,    // Explicitly disable declarationMap
         rootDir: 'src',
-        outDir: 'dist/cjs'  // This is the key change - match with Rollup's dir
+        outDir: 'dist/cjs',  // This is the key change - match with Rollup's dir
+        removeComments: false  // To explicitly preserve comments
       })
     ],
     external: ['tslib'],
     onwarn(warning, warn) {
       // Ignore circular dependency warnings
-      if (warning.code === 'CIRCULAR_DEPENDENCY') return;
+      // if (warning.code === 'CIRCULAR_DEPENDENCY') return;
       warn(warning);
     }
   }
