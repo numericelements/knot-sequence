@@ -36,7 +36,9 @@ export default [
       dir: 'dist/cjs',
       format: 'cjs',
       preserveModules: true,
-      preserveModulesRoot: 'src'
+      preserveModulesRoot: 'src',
+      entryFileNames: '[name].cjs',
+      chunkFileNames: '[name].cjs'
     },
     plugins: [
       nodeResolve(),
